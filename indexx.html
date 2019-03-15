@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+
+</head>
+
+<body>
+<!--	<select id= "select" onChange="myfunction()">
+		<option value = "0">r</option>
+		<option value = "1">t</option>
+		<option value = "2">g</option>
+		<option value = "3">l</option>
+		<option value = "4">h</option>
+		<option value = "5">j</option>
+		
+	</select>-->
+<ul>
+	<li onClick="myfunction(0)">aaa</li>
+	<li onClick="myfunction(1)">aaa</li>
+	<li onClick="myfunction(2)">aaa</li>
+	<li onClick="myfunction(3)">aaa</li>
+	<li onClick="myfunction(4)">aaa</li>
+	<li onClick="myfunction(5)">aaa</li>
+	</ul>	
+	<div id="demo">this is</div>
+
+	
+		<script>
+employee = [
+	{name:"himanshu",age:25,sex:"Male",dobyear:1991},
+	{name:"Ranjit",age:29,sex:"Male",dobyear:1992},
+	{name:"harish",age:29,sex:"Male",dobyear:1996},
+	{name:"sanjit",age:21,sex:"Male",dobyear:1989},
+	{name:"sunil",age:30,sex:"Male",dobyear:1986},
+	{name:"juliet",age:36,sex:"Female",dobyear:1995}
+]	
+			
+			function myfunction(val){
+				document.getElementById("demo").innerHTML = "this is " + employee[val].name + employee[val].age
+			}
+			
+			
+	</script>
+</body>
+</html>
